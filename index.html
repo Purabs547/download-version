@@ -897,46 +897,43 @@ Price Area
                         <h3 class="sec-title mb-0 text-white">Booking Your Dates</h3>
                         <img src="assets/img/theme-img/title_shape_2.svg" alt="">
                     </div>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <i class="fa-light fa-user"></i>
-                            <input type="text" placeholder="First Name" class="form-control">
+                    <form action="mail.php" method="POST" class="quote-form ajax-contact">
+                        <div class="title-area mb-40">
+                            <span class="sub-title text-white">Contact Us<img src="assets/img/theme-img/title_right2.svg" alt=""></span>
+                            <h3 class="sec-title text-white">Need to Make An Enquiry</h3>
                         </div>
-                        <div class="form-group col-md-6">
-                            <i class="fa-light fa-user"></i>
-                            <input type="text" placeholder="Last Name" class="form-control">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                <i class="fal fa-user"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                <i class="fal fa-envelope"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                <i class="fal fa-phone"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select name="subject" id="subject" class="form-select nice-select">
+                                    <option value="" disabled selected hidden>Select Subject</option>
+                                    <option value="Engine Diagnostics">Bridal Makeup</option>
+                                    <option value="Facial & Massage">Pre-Wedding Makeup</option>
+                                    <option value="Engine Diagnostics">Party & Siders Makeup</option>
+                                      
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Write message...."></textarea>
+                                <i class="fal fa-comment"></i>
+                            </div>
+                            <div class="form-btn col-12">
+                                <button class="th-btn style4">Send Messages<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <i class="fa-light fa-envelope"></i>
-                            <input type="text" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <i class="fa-light fa-phone"></i>
-                            <input type="text" placeholder="phone" class="form-control">
-                        </div>
-                        <div class="form-group col-12">
-                            <i class="fa-regular fa-tag"></i>
-                            <select name="subject" id="subject" class="form-select nice-select">
-                                <option value="" disabled selected hidden>Select Subject</option>
-                                <option value="Engine Diagnostics">Spa & Massage</option>
-                                <option value="Facial & Massage">Facial & Massage</option>
-                                <option value="Engine Diagnostics">Head Massage</option>
-                                <option value="Sports Massage">Sports Massage</option>
-                                <option value="Stone Massage">Stone Massage</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-12">
-                            <input type="text" class="date-pick form-control" name="date" id="date-pick" placeholder="Select Date">
-                            <i class="fa-light fa-calendar-days"></i>
-                        </div>
-                        <div class="form-group col-12">
-                            <input type="text" class="time-pick form-control" name="time" id="time-pick" placeholder="Select Time">
-                            <i class="fa-light fa-clock"></i>
-                        </div>
-                        <div class="btn-group justify-content-center justify-content-lg-start">
-                            <button class="th-btn style4 fw-btn">Booking Now<i class="fa-solid fa-arrow-right ms-2"></i></button>
-                        </div>
-                    </div>
+                        <p class="form-messages mb-0 mt-3"></p>
+                    </form>
                 </div>
             </div>
         </div>
