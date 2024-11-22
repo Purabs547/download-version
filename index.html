@@ -46,6 +46,70 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+
+
+    <style>
+        /* Ensure the section container doesn't overflow */
+.price-area {
+    overflow: hidden;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Fix container width */
+.pricing-form {
+    background: #333; /* Ensure good contrast for form */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 100%; /* Prevent overflow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.pricing-form .form-control,
+.pricing-form .form-select {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.pricing-form .form-btn .th-btn {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pricing-form .form-btn .th-btn:hover {
+    background: #e64a19;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .pricing-form {
+        padding: 20px;
+    }
+    
+    .price-area {
+        padding: 20px;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+}
+
+    </style>
 </head>
 
 <body>
@@ -80,9 +144,9 @@
         <div class="th-menu-area">
             <div class="mobile-logo">
                 <a href="index.html"><img src="assets/img/priyanshi/7.png" alt="Rasm"></a>
-                <div class="close-menu">
+                <!-- <div class="close-menu">
                     <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-                </div>
+                </div> -->
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -568,7 +632,7 @@ About Area
                             <img class="tilt-active" src="assets/img/priyanshi/387X500-1.png" alt="About">
                         </div>
                         <div class="img3 movingX">
-                            <img src="assets/img/shape/flower_1_14.png" alt="About">
+                            <!-- <img src="assets/img/shape/flower_1_14.png" alt="About"> -->
                         </div>
                     </div>
                 </div>
@@ -739,7 +803,7 @@ Service Area
 
 
             </div>
-            <div class="text-center mt-50"><span class="service-btn">You Get More Services <a class="line-btn" href="#contact-sec">Explore Now<i class="fa-regular fa-arrow-right"></i></a></span>
+            <div class="text-center mt-50"><span class="service-btn">You Get More Services <a class="line-btn" href="#price-sec">Explore Now<i class="fa-regular fa-arrow-right"></i></a></span>
             </div>
         </div>
         <div class="shape-mockup shape-wrapp jump d-none d-xxl-block" data-bottom="5%" data-left="0%"><img src="assets/img/shape/leaves_6.png" alt="shape">
@@ -918,8 +982,8 @@ Price Area
                                 <select name="subject" id="subject" class="form-select nice-select">
                                     <option value="" disabled selected hidden>Select Subject</option>
                                     <option value="Engine Diagnostics">Bridal Makeup</option>
-                                    <option value="Facial & Massage">Pre-Wedding Makeup</option>
-                                    <option value="Engine Diagnostics">Party & Siders Makeup</option>
+                                    <option value="Facial & Massage">Pre-Wedding </option>
+                                    <option value="Engine Diagnostics">Party & Siders </option>
                                       
                                 </select>
                             </div>
@@ -985,7 +1049,7 @@ Choose Area
                                         <p class="price-item_text">Shine and sparkle with glamour for your sangeet night.</p>
                                     </div>
                                     <div class="price">
-                                        <span class="price-item_price">₹4000 <a href="price-sec" class="th-btn style2">Book Now</a></span>
+                                        <span class="price-item_price">₹4000 <a href="#price-sec" class="th-btn style2">Book Now</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -998,7 +1062,7 @@ Choose Area
                                         <p class="price-item_text">Natural beauty elevated for your engagement.</p>
                                     </div>
                                     <div class="price">
-                                        <span class="price-item_price">₹3500 <a href="price-sec" class="th-btn style2">Book Now</a></span>
+                                        <span class="price-item_price">₹3500 <a href="#price-sec" class="th-btn style2">Book Now</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -1011,7 +1075,7 @@ Choose Area
                                         <p class="price-item_text">Flawless HD bridal makeup for sacred wedding rituals.</p>
                                     </div>
                                     <div class="price">
-                                        <span class="price-item_price">₹5000 <a href="price-sec" class="th-btn style2">Book Now</a></span>
+                                        <span class="price-item_price">₹5000 <a href="#price-sec" class="th-btn style2">Book Now</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -1024,7 +1088,7 @@ Choose Area
                                         <p class="price-item_text">Stunning, simple looks for every occasion.</p>
                                     </div>
                                     <div class="price">
-                                        <span class="price-item_price">₹1000<a href="price-sec" class="th-btn style2">Book Now</a></span>
+                                        <span class="price-item_price">₹1000<a href="#price-sec" class="th-btn style2">Book Now</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -1037,7 +1101,7 @@ Choose Area
                                         <p class="price-item_text">High-definition, long-lasting makeup for flawless appearances.</p>
                                     </div>
                                     <div class="price">
-                                        <span class="price-item_price">₹1500<a href="price-sec" class="th-btn style2">Book Now</a></span>
+                                        <span class="price-item_price">₹1500<a href="#price-sec" class="th-btn style2">Book Now</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -1658,7 +1722,7 @@ Blog Area
                                 <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
                                 <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://linkedin.com"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/glitters_by_priyanshii/"><i class="fab fa-instagram"></i></a>
                                 <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
@@ -1670,7 +1734,7 @@ Blog Area
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <p class="copyright-text"><i class="fal fa-copyright"></i> 2023 <a href="www.biginit.in">BigInIT  </a>All Rights
+                        <p class="copyright-text"><i class="fal fa-copyright"></i> 2023 <a href="https://biginit.in">BigInIT  </a>All Rights
                             Reserved By</p>
                     </div>
                     <div class="col-lg-6">
